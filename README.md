@@ -49,9 +49,11 @@ like attention, physiology and intent into intuitive, human-centered systems.
 </p>
 
 ### 🎬 Sneak peek: my 3D portfolio
-<a href="https://jannatim-maisha.github.io/Portfolio_threejs_JM/">
-  <img src="assets/portfolio-preview.webp" alt="Scrolling through my Three.js portfolio: a 3D forest that changes seasons" width="100%">
-</a>
+<p align="center">
+  <a href="https://jannatim-maisha.github.io/Portfolio_threejs_JM/">
+    <img src="assets/portfolio-preview.webp" alt="Scrolling through my Three.js portfolio: a 3D forest that changes seasons" width="560">
+  </a>
+</p>
 <p align="center"><sub>Built with Three.js. Click to explore it live.</sub></p>
 
 ---
