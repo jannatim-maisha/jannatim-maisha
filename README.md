@@ -56,5 +56,12 @@ like attention, physiology and intent into intuitive, human-centered systems.
 </p>
 <p align="center"><sub>Built with Three.js. Click to explore it live.</sub></p>
 
+### 🐍 My contributions, eaten by a snake
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jannatim-maisha/jannatim-maisha/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jannatim-maisha/jannatim-maisha/output/github-snake.svg">
+  <img alt="Animation of a snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/jannatim-maisha/jannatim-maisha/output/github-snake.svg">
+</picture>
+
 ---
 *"Inspire before you expire."*
