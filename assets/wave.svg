@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="waving hand">
+  <style>
+    .hand { transform-origin: 40px 54px; animation: wave 2.4s ease-in-out infinite; }
+    @keyframes wave {
+      0%, 60%, 100% { transform: rotate(0deg); }
+      10% { transform: rotate(16deg); } 20% { transform: rotate(-8deg); }
+      30% { transform: rotate(16deg); } 40% { transform: rotate(-4deg); } 50% { transform: rotate(10deg); }
+    }
+    @media (prefers-reduced-motion: reduce) { .hand { animation: none; } }
+  </style>
+  <g class="hand">
+    <!-- fingers -->
+    <rect x="17" y="10" width="8" height="26" rx="4" fill="#fcc21b" transform="rotate(-18 21 30)"/>
+    <rect x="25" y="6" width="8" height="28" rx="4" fill="#fcc21b" transform="rotate(-8 29 30)"/>
+    <rect x="33" y="6" width="8" height="28" rx="4" fill="#fcc21b" transform="rotate(2 37 30)"/>
+    <rect x="41" y="10" width="7.5" height="24" rx="3.75" fill="#fcc21b" transform="rotate(12 44 30)"/>
+    <!-- palm + thumb -->
+    <path d="M16 34 C14 46 22 58 36 58 C48 58 52 48 51 38 L50 28 L18 28 Z" fill="#fcc21b"/>
+    <rect x="6" y="30" width="8" height="20" rx="4" fill="#fcc21b" transform="rotate(-48 12 40)"/>
+    <path d="M22 44 C26 50 34 52 42 48" fill="none" stroke="#e0a800" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

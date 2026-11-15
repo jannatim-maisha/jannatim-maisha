@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-label="A cozy late-night desk: laptop typing code, steaming coffee, a sleeping cat and a tiny robot">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c4a2d"/>
+      <stop offset="1" stop-color="#5b3520"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#a5b4fc" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#a5b4fc" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1000" height="240" rx="18"/></clipPath>
+    <clipPath id="screen"><rect x="330" y="78" width="200" height="104" rx="4"/></clipPath>
+    <style>
+      text { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .star { fill: #fef9c3; animation: twinkle 3s ease-in-out infinite; }
+      .s2 { animation-delay: -1s; } .s3 { animation-delay: -2s; } .s4 { animation-delay: -.5s; }
+      @keyframes twinkle { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+      .steam { fill: none; stroke: #e0e7ff; stroke-width: 3; stroke-linecap: round; opacity: 0;
+               animation: steam 3s ease-in-out infinite; }
+      .st2 { animation-delay: -1s; } .st3 { animation-delay: -2s; }
+      @keyframes steam { 0% { transform: translateY(8px); opacity: 0; } 30% { opacity: .7; } 100% { transform: translateY(-22px); opacity: 0; } }
+      .leaf { transform-origin: 640px 196px; animation: sway 5s ease-in-out infinite; }
+      .lf2 { animation-delay: -2.5s; }
+      @keyframes sway { 0%, 100% { transform: rotate(-4deg); } 50% { transform: rotate(4deg); } }
+      .cat { transform-origin: 790px 205px; animation: breathe 3.6s ease-in-out infinite; }
+      @keyframes breathe { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(1.06); } }
+      .tail { transform-origin: 838px 200px; animation: swish 4s ease-in-out infinite; }
+      @keyframes swish { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-14deg); } }
+      .z { fill: #c7d2fe; font-weight: 700; opacity: 0; animation: zz 4.5s ease-in infinite; }
+      .z2 { animation-delay: 1.5s; } .z3 { animation-delay: 3s; }
+      @keyframes zz { 0% { transform: translate(0, 0); opacity: 0; } 20% { opacity: .9; } 100% { transform: translate(16px, -40px); opacity: 0; } }
+      .c0 { transform-box: fill-box; transform-origin: left; animation: k0 9s linear infinite; }
+      @keyframes k0 { 0%, 0% { transform: scaleX(0); } 10%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .c1 { transform-box: fill-box; transform-origin: left; animation: k1 9s linear infinite; }
+      @keyframes k1 { 0%, 10% { transform: scaleX(0); } 22%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .c2 { transform-box: fill-box; transform-origin: left; animation: k2 9s linear infinite; }
+      @keyframes k2 { 0%, 22% { transform: scaleX(0); } 34%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .c3 { transform-box: fill-box; transform-origin: left; animation: k3 9s linear infinite; }
+      @keyframes k3 { 0%, 34% { transform: scaleX(0); } 48%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .c4 { transform-box: fill-box; transform-origin: left; animation: k4 9s linear infinite; }
+      @keyframes k4 { 0%, 48% { transform: scaleX(0); } 58%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .c5 { transform-box: fill-box; transform-origin: left; animation: k5 9s linear infinite; }
+      @keyframes k5 { 0%, 58% { transform: scaleX(0); } 70%, 95% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+      .robot { animation: roll 10s ease-in-out infinite; }
+      @keyframes roll { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(70px); } }
+      .eye { fill: #67e8f9; animation: blinkeye 4s steps(1) infinite; }
+      @keyframes blinkeye { 0%, 92% { opacity: 1; } 93%, 97% { opacity: .1; } 98%, 100% { opacity: 1; } }
+      .wheel { transform-box: fill-box; transform-origin: center; animation: spin 1.2s linear infinite; }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      .bar { fill: #f9a8d4; transform-box: fill-box; transform-origin: bottom; animation: eq 1.1s ease-in-out infinite; }
+      .b2 { animation-delay: -.3s; fill: #c4b5fd; } .b3 { animation-delay: -.6s; fill: #7dd3fc; } .b4 { animation-delay: -.9s; fill: #86efac; }
+      @keyframes eq { 0%, 100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .steam, .z { opacity: .5; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="240" fill="url(#sky)"/>
+
+    <!-- window with moon and stars -->
+    <rect x="40" y="26" width="200" height="140" rx="10" fill="#0f172a" stroke="#4338ca" stroke-width="4"/>
+    <line x1="140" y1="26" x2="140" y2="166" stroke="#4338ca" stroke-width="4"/>
+    <line x1="40" y1="96" x2="240" y2="96" stroke="#4338ca" stroke-width="4"/>
+    <circle cx="196" cy="58" r="16" fill="#fef3c7"/>
+    <circle cx="203" cy="53" r="14" fill="#0f172a"/>
+    <circle class="star" cx="70" cy="50" r="2"/>
+    <circle class="star s2" cx="110" cy="70" r="1.6"/>
+    <circle class="star s3" cx="88" cy="128" r="2"/>
+    <circle class="star s4" cx="170" cy="120" r="1.6"/>
+    <circle class="star s2" cx="214" cy="140" r="2"/>
+    <circle class="star s3" cx="60" cy="150" r="1.4"/>
+
+    <!-- lamp glow -->
+    <circle cx="430" cy="130" r="160" fill="url(#glow)"/>
+
+    <!-- desk -->
+    <rect x="0" y="196" width="1000" height="44" fill="url(#desk)"/>
+    <rect x="0" y="196" width="1000" height="5" fill="#9a6440"/>
+
+    <!-- laptop -->
+    <rect x="320" y="68" width="220" height="124" rx="10" fill="#1f2937" stroke="#64748b" stroke-width="3"/>
+    <rect x="330" y="78" width="200" height="104" rx="4" fill="#0b1220"/>
+    <g clip-path="url(#screen)" font-family="Consolas, Menlo, monospace" font-size="11">
+      <g>
+        <rect class="c0" x="342" y="90" height="6" rx="3" fill="#f472b6" width="60"/>
+        <rect class="c1" x="342" y="104" height="6" rx="3" fill="#7dd3fc" width="120"/>
+        <rect class="c2" x="356" y="118" height="6" rx="3" fill="#c4b5fd" width="90"/>
+        <rect class="c3" x="356" y="132" height="6" rx="3" fill="#86efac" width="140"/>
+        <rect class="c4" x="342" y="146" height="6" rx="3" fill="#fcd34d" width="70"/>
+        <rect class="c5" x="342" y="160" height="6" rx="3" fill="#7dd3fc" width="110"/>
+      </g>
+    </g>
+    <path d="M296 192 H564 L552 202 H308 Z" fill="#94a3b8"/>
+
+    <!-- coffee mug with steam -->
+    <path class="steam" d="M588 140 q-6 -10 0 -20 q6 -10 0 -20"/>
+    <path class="steam st2" d="M602 140 q-6 -10 0 -20 q6 -10 0 -20"/>
+    <path class="steam st3" d="M616 140 q-6 -10 0 -20 q6 -10 0 -20"/>
+    <rect x="578" y="148" width="48" height="50" rx="8" fill="#f472b6"/>
+    <path d="M626 160 q18 0 18 14 q0 14 -18 14" fill="none" stroke="#f472b6" stroke-width="7"/>
+    <text x="602" y="180" font-size="15" fill="#fff" text-anchor="middle">♥</text>
+
+    <!-- plant -->
+    <g transform="translate(36 0)">
+    <g class="leaf"><path d="M640 196 C620 170 612 150 626 130 C640 150 644 170 640 196 Z" fill="#4ade80"/></g>
+    <g class="leaf lf2"><path d="M642 196 C660 172 672 156 664 136 C648 152 642 172 642 196 Z" fill="#22c55e"/></g>
+    <g class="leaf"><path d="M641 196 C636 168 640 140 652 122 C656 146 650 170 641 196 Z" fill="#16a34a"/></g>
+    <path d="M624 180 H660 L655 204 H629 Z" fill="#d97706"/>
+    </g>
+
+    <!-- sleeping cat -->
+    <g class="tail"><path d="M836 200 C870 204 884 186 872 172" fill="none" stroke="#fb923c" stroke-width="10" stroke-linecap="round"/></g>
+    <g class="cat">
+      <ellipse cx="800" cy="186" rx="44" ry="22" fill="#fb923c"/>
+      <circle cx="758" cy="184" r="19" fill="#fb923c"/>
+      <path d="M744 172 L746 154 L758 167 Z" fill="#fb923c"/>
+      <path d="M766 167 L774 153 L776 172 Z" fill="#fb923c"/>
+      <path d="M748 186 q4 4 8 0 M762 186 q4 4 8 0" fill="none" stroke="#7c2d12" stroke-width="2" stroke-linecap="round"/>
+      <path d="M790 172 q8 6 0 12 M806 170 q8 6 0 12" fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text class="z" x="770" y="150" font-size="16">z</text>
+    <text class="z z2" x="770" y="150" font-size="13">z</text>
+    <text class="z z3" x="770" y="150" font-size="18">z</text>
+
+    <!-- tiny robot (CareBot) -->
+    <g class="robot">
+      <rect x="884" y="160" width="46" height="30" rx="8" fill="#e2e8f0"/>
+      <rect x="892" y="167" width="30" height="12" rx="6" fill="#0f172a"/>
+      <circle class="eye" cx="900" cy="173" r="3"/>
+      <circle class="eye" cx="914" cy="173" r="3"/>
+      <line x1="907" y1="160" x2="907" y2="150" stroke="#e2e8f0" stroke-width="3"/>
+      <circle cx="907" cy="148" r="4" fill="#f472b6"/>
+      <g class="wheel"><circle cx="894" cy="192" r="6" fill="#334155"/><rect x="893" y="187" width="2" height="10" fill="#94a3b8"/></g>
+      <g class="wheel"><circle cx="920" cy="192" r="6" fill="#334155"/><rect x="919" y="187" width="2" height="10" fill="#94a3b8"/></g>
+    </g>
+
+    <!-- lo-fi now playing -->
+    <text x="290" y="34" font-size="14" fill="#c7d2fe">♪ now playing: lo-fi beats to research to</text>
+    <g transform="translate(560 18)">
+      <rect class="bar" x="0" y="0" width="6" height="18" rx="2"/>
+      <rect class="bar b2" x="9" y="0" width="6" height="18" rx="2"/>
+      <rect class="bar b3" x="18" y="0" width="6" height="18" rx="2"/>
+      <rect class="bar b4" x="27" y="0" width="6" height="18" rx="2"/>
+    </g>
+    <text x="960" y="34" font-size="14" fill="#c7d2fe" text-anchor="end">coding · coffee · curiosity ☕</text>
+  </g>
+</svg>
